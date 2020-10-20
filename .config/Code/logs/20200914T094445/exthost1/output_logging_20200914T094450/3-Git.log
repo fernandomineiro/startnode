@@ -1,0 +1,240 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/fernando/Área de Trabalho/master
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git show --textconv :src/app/app-routing.module.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/app-routing.module.ts
+> git cat-file -s 5325aac17beed3f0ca726b7a445d7afdad3a63b2
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/pages/pages-routing.module.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/pages-routing.module.ts
+> git cat-file -s 87b7434cad46dfd372b3a4225e477ac226357ab6
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git show --textconv :src/app/pages/pages-routing.module.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/pages-routing.module.ts
+> git cat-file -s 87b7434cad46dfd372b3a4225e477ac226357ab6
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/admin/admin.guard.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/admin/admin.guard.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/pages/login/login.component.html
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.html
+> git cat-file -s ae5170eec96352cf91e5f4debc64638e9abe446d
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/app-routing.module.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/app-routing.module.ts
+> git cat-file -s 5325aac17beed3f0ca726b7a445d7afdad3a63b2
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.html
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.html
+> git cat-file -s ae5170eec96352cf91e5f4debc64638e9abe446d
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.html
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.html
+> git cat-file -s ae5170eec96352cf91e5f4debc64638e9abe446d
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git show --textconv :src/app/pages/login/login.component.html
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.html
+> git cat-file -s ae5170eec96352cf91e5f4debc64638e9abe446d
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.html
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.html
+> git cat-file -s ae5170eec96352cf91e5f4debc64638e9abe446d
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git show --textconv :src/app/service/api.service.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/service/api.service.ts
+> git status -z -u
+> git show --textconv :src/app/pages/login/login.component.ts
+> git ls-files --stage -- /home/fernando/Área de Trabalho/master/src/app/pages/login/login.component.ts
+> git cat-file -s 13aca948c4b5f99be55ebd3a08aa7f50fb55a456
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/fernando/Área de Trabalho/master/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template

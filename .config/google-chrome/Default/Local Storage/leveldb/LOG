@@ -1,0 +1,6 @@
+2020/09/14-10:42:50.083 bcf Reusing MANIFEST /home/fernando/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2020/09/14-10:42:50.086 bcf Recovering log #6
+2020/09/14-10:42:50.087 bcf Reusing old log /home/fernando/.config/google-chrome/Default/Local Storage/leveldb/000006.log 
+2020/09/14-10:51:46.802 eae Level-0 table #10: started
+2020/09/14-10:51:46.806 eae Level-0 table #10: 26309 bytes OK
+2020/09/14-10:51:46.809 eae Delete type=0 #6

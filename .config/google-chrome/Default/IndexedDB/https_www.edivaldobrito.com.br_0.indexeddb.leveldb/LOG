@@ -1,0 +1,5 @@
+2020/09/14-11:09:09.922 10c3 Reusing MANIFEST /home/fernando/.config/google-chrome/Default/IndexedDB/https_www.edivaldobrito.com.br_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/14-11:10:06.964 e34 Level-0 table #5: started
+2020/09/14-11:10:07.098 e34 Level-0 table #5: 6188 bytes OK
+2020/09/14-11:10:07.265 e34 Delete type=0 #3
+2020/09/14-11:10:07.266 e34 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

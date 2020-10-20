@@ -1,0 +1,50 @@
+file:///home/fernando/%C3%81rea%20de%20Trabalho/master/src/app/pages/login/login.component.html {"mtime":1599678012542,"ctime":1600087384035,"size":2554,"etag":"35l9j2hl92kc","orphaned":false}
+<div class="row center" status="primary">
+    <div class="col">
+        <nb-card class="card">
+            <nb-card-body>
+                <div class="image-section">
+                    <img st src="assets/images/logo-spot.png">
+                </div>
+                <div>
+                    <h1 style="color: white; font-family: 'Open Sans'; font-weight: 300;">Adex Creative</h1>
+                </div>
+                <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+                <div class="input-section">
+                    <nb-form-field>
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.username.errors }">
+                        <input formControlName="username" placeholder="Login" type="text" nbInput>
+                        </p>
+                        <div *ngIf="isSubmitted && formControls.username.errors" class="help-block">
+                            <div *ngIf="formControls.username.errors.required">Usuário é Obrigatório</div>
+                          </div>
+                    </nb-form-field> 
+                </div>
+                <div class="input-section">
+                    <nb-form-field>
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+                        <input placeholder="Senha" type="password" formControlName="password" nbInput>
+                        </p>
+                        <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+                            <div *ngIf="formControls.password.errors.required">Password é Obrigatório</div>
+                          </div>
+                    </nb-form-field>
+                </div>
+                <div class="input-section" style="padding-top: 20px;">
+                    <button type="submit"
+                        style="width: 280px; height: 50px; background-color: #4ED6C3 !important; border: none !important; color: white; font-weight: 600"
+                        nbButton>
+                        Entrar
+                    </button>
+                </div>
+            </form>
+                <div class="input-section">
+                    <p style="color: white;">Esqueceu sua senha?</p>
+                </div>
+                <div class="bottom">
+                    <p style="color: white;">Entre em contato: <img style="padding-left: 10px; padding-right: 10px" src="assets/images/icon-buttons.svg" /> </p>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

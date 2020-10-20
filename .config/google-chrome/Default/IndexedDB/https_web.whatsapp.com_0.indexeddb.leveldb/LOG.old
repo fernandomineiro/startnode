@@ -1,0 +1,15 @@
+2020/09/14-10:44:56.457 bcf Reusing MANIFEST /home/fernando/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/14-10:44:56.457 bcf Recovering log #7
+2020/09/14-10:44:56.470 bcf Reusing old log /home/fernando/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000007.log 
+2020/09/14-10:50:26.220 e34 Level-0 table #12: started
+2020/09/14-10:50:26.272 e34 Level-0 table #12: 497091 bytes OK
+2020/09/14-10:50:26.277 e34 Delete type=0 #7
+2020/09/14-10:50:26.278 e34 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/14-10:50:26.278 e34 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x05\x02\x1f\x03\x00@2\x02\xceHwB\x00\x01,\x003\x00u\x00M\x00a\x00g\x00j\x00d\x00T\x00H\x00T\x00W\x00k\x006\x009\x00K\x00K\x00z\x00q\x00x\x00c\x00E\x00E\x00I\x00R\x00r\x00Y\x00f\x00S\x00K\x00H\x00T\x00H\x007\x00N\x00/\x00n\x00V\x00t\x00q\x00c\x00b\x00A\x00Y\x00=' @ 68958 : 1
+2020/09/14-10:50:26.278 e34 Compacting 1@1 + 1@2 files
+2020/09/14-10:50:26.320 e34 Generated table #13@1: 17688 keys, 841233 bytes
+2020/09/14-10:50:26.320 e34 Compacted 1@1 + 1@2 files => 841233 bytes
+2020/09/14-10:50:26.323 e34 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/14-10:50:26.323 e34 Delete type=2 #12
+2020/09/14-10:50:26.323 e34 Delete type=2 #9
+2020/09/14-10:50:26.323 e34 Manual compaction at level-1 from '\x00\x05\x02\x1f\x03\x00@2\x02\xceHwB\x00\x01,\x003\x00u\x00M\x00a\x00g\x00j\x00d\x00T\x00H\x00T\x00W\x00k\x006\x009\x00K\x00K\x00z\x00q\x00x\x00c\x00E\x00E\x00I\x00R\x00r\x00Y\x00f\x00S\x00K\x00H\x00T\x00H\x007\x00N\x00/\x00n\x00V\x00t\x00q\x00c\x00b\x00A\x00Y\x00=' @ 68958 : 1 .. (end); will stop at (end)

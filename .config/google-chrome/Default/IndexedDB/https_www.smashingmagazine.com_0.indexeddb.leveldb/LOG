@@ -1,0 +1,15 @@
+2020/09/14-11:03:01.529 103a Reusing MANIFEST /home/fernando/.config/google-chrome/Default/IndexedDB/https_www.smashingmagazine.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/14-11:03:01.530 103a Recovering log #4
+2020/09/14-11:03:01.530 103a Reusing old log /home/fernando/.config/google-chrome/Default/IndexedDB/https_www.smashingmagazine.com_0.indexeddb.leveldb/000004.log 
+2020/09/14-11:03:39.755 e34 Level-0 table #8: started
+2020/09/14-11:03:39.758 e34 Level-0 table #8: 13880 bytes OK
+2020/09/14-11:03:39.760 e34 Delete type=0 #4
+2020/09/14-11:03:39.761 e34 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/14-11:03:39.761 e34 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x03\x00@\xd2\xd1\xceHwB\x00\x01S\x00s\x00m\x00-\x00i\x00m\x00a\x00g\x00e\x00-\x00c\x00a\x00c\x00h\x00e\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00w\x00w\x00w\x00.\x00s\x00m\x00a\x00s\x00h\x00i\x00n\x00g\x00m\x00a\x00g\x00a\x00z\x00i\x00n\x00e\x00.\x00c\x00o\x00m\x00/\x00i\x00m\x00a\x00g\x00e\x00s\x00/\x00f\x00a\x00v\x00i\x00c\x00o\x00n\x00/\x00a\x00p\x00p\x00-\x00i\x00c\x00o\x00n\x00-\x001\x009\x002\x00x\x001\x009\x002\x00.\x00p\x00n\x00g' @ 746 : 1
+2020/09/14-11:03:39.761 e34 Compacting 1@1 + 1@2 files
+2020/09/14-11:03:39.765 e34 Generated table #9@1: 95 keys, 5809 bytes
+2020/09/14-11:03:39.766 e34 Compacted 1@1 + 1@2 files => 5809 bytes
+2020/09/14-11:03:39.767 e34 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/14-11:03:39.768 e34 Delete type=2 #8
+2020/09/14-11:03:39.768 e34 Delete type=2 #5
+2020/09/14-11:03:39.768 e34 Manual compaction at level-1 from '\x00\x01\x01 \x03\x00@\xd2\xd1\xceHwB\x00\x01S\x00s\x00m\x00-\x00i\x00m\x00a\x00g\x00e\x00-\x00c\x00a\x00c\x00h\x00e\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00w\x00w\x00w\x00.\x00s\x00m\x00a\x00s\x00h\x00i\x00n\x00g\x00m\x00a\x00g\x00a\x00z\x00i\x00n\x00e\x00.\x00c\x00o\x00m\x00/\x00i\x00m\x00a\x00g\x00e\x00s\x00/\x00f\x00a\x00v\x00i\x00c\x00o\x00n\x00/\x00a\x00p\x00p\x00-\x00i\x00c\x00o\x00n\x00-\x001\x009\x002\x00x\x001\x009\x002\x00.\x00p\x00n\x00g' @ 746 : 1 .. (end); will stop at (end)
