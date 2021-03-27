@@ -5,50 +5,51 @@ const Role = db.role;
  
 const Op = db.Sequelize.Op;
 
-var jwt = require('jsonwebtoken');
+var jwt = require('jsonwebtoken'); 
 var bcrypt = require('bcryptjs');
 
-exports.signup = (req, res) => {
-	// Save User to Database
-	console.log("Função de processamento -> SignUp");
+ exports.signup = async (req, res, next) => {
+	try {
+	const { QueryTypes } = require('sequelize');
+	console.log("Processing func -> SignUp");
 	
-	User.create({
-		name: req.body.name,
-		username: req.body.username,
-		email: req.body.email,
-		password: bcrypt.hashSync(req.body.password, 8)
-	}).then(user => {
-		Role.findAll({
-		  where: {
-			name: {
-			  [Op.or]: req.body.roles
-			}
-		  }
-		}).then(roles => {
-			user.setRoles(roles).then(() => {
-				res.send("Usuário registrado com sucesso!");
-            });
-		}).catch(err => {
-			res.status(500).send("Error -> " + err);
-		});
-	}).catch(err => {
-		res.status(500).send("Fail! Error -> " + err);
-	})
+	console.log(req.body.senha)
+	
+		 const name = req.body.nome;
+		 const date = req.body.dataNascimento;
+		 const endereco = req.body.endereco;
+		 const tell = req.body.telefone;
+		 const cpf = req.body.cpf;
+		 const tipodeacesso = req.body.tipoAcesso;
+		 const email = req.body.login;
+		 const password = bcrypt.hashSync(req.body.senha, 8);
+		 const created = '2021-03-25 13:57:39'
+	
+		 const pracas = await db.sequelize.query(`INSERT INTO users (name, date, endereco, tell, cpf, tipodeacesso, email, password, createdAt, updatedAt)
+		 VALUES ('${name}', '${date}', '${endereco}', '${tell}', '${cpf}', '${tipodeacesso}', '${email}', '${password}', '${created}', '${created}')`, { type: QueryTypes.INSERT });
+	   res.status(200).json({ resposta:  'ok'});
+
+	}
+	catch (err) {
+        next(err);
+    }
 }
+
+
 
 exports.signin = (req, res) => {
 	console.log("Sign-In");
 	
 	User.findOne({
 		where: {
-			username: req.body.username
+			email: req.body.login
 		}
 	}).then(user => {
 		if (!user) {
 			return res.status(404).send('Usuario não encontrado.');
 		}
 
-		var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
+		var passwordIsValid = bcrypt.compareSync(req.body.senha, user.password);
 		if (!passwordIsValid) {
 			return res.status(401).send({ auth: false, accessToken: null, reason: "Senha inválida!" });
 		}
@@ -57,7 +58,7 @@ exports.signin = (req, res) => {
 		  expiresIn: 86400 
 		});
 		
-		res.status(200).send({ auth: true, accessToken: token, id: user.id });
+		res.status(200).send({ auth: true, accessToken: token, acesso: user.tipodeacesso, id: user.id });
 		
 	}).catch(err => {
 		res.status(500).send('Error -> ' + err);
@@ -135,5 +136,73 @@ exports.managementBoard = (req, res) => {
 		});
 	})
 }
+
+ exports.getusuario = async (req, res, next) => {
+	try {
+	const { QueryTypes } = require('sequelize');
+	console.log("Processing func -> getusuario");
+	let id = req.params.id;
+	
+	
+	
+	
+		 const pracas = await db.sequelize.query(`SELECT * FROM users WHERE id = ${id}`, { type: QueryTypes.SELECT });
+	   res.status(200).json({ resposta:  pracas});
+
+	}
+	catch (err) {
+        next(err);
+    }
+}
+
+exports.putusuario = async (req, res, next) => {
+	try {
+	const { QueryTypes } = require('sequelize');
+	console.log("Processing func -> putusuario");
+	let id = req.params.id;
+	
+	const name = req.body.nome;
+		 const date = req.body.dataNascimento;
+		 const endereco = req.body.endereco;
+		 const tell = req.body.telefone;
+		 const cpf = req.body.cpf;
+		 const email = req.body.login;
+		 
+		 const a = '2021-03-25 13:57:39';
+	
+	
+	
+	
+		 const pracas = await db.sequelize.query(`UPDATE users SET name = '${name}', date = '${date}', endereco = '${endereco}', tell = '${tell}', cpf = '${cpf}', email = '${email}',  updatedAt = '${a}'  WHERE id = ${id}`, { type: QueryTypes.UPDATE });
+	   res.status(200).json({ resposta:  pracas});
+
+	}
+	catch (err) {
+        next(err);
+    }
+}
+
+exports.putusuariosenha = async (req, res, next) => {
+	try {
+	const { QueryTypes } = require('sequelize');
+	console.log("Processing func -> putusuariosenha");
+	let id = req.params.id;
+	
+	const password = bcrypt.hashSync(req.body.novaSenha, 8);
+	
+	
+	
+	
+		 const pracas = await db.sequelize.query(`UPDATE users SET password = '${password}' WHERE id = ${id}`, { type: QueryTypes.UPDATE });
+	   res.status(200).json({ resposta:  pracas});
+
+	}
+	catch (err) {
+        next(err);
+    }
+}
+
+
+
 
 

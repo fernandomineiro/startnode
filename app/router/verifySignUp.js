@@ -8,22 +8,23 @@ checkDuplicateUserNameOrEmail = (req, res, next) => {
 	
 	User.findOne({
 		where: {
-			username: req.body.username
+			name: req.body.nome
 		} 
 	}).then(user => {
 		if(user){
-			res.status(400).send("Fail Username já em uso!");
+			res.status(200).json({ resposta:  'Nome já em uso'});
 			return;
 		}
 		
 		// -> Check Email is already in use
 		User.findOne({ 
 			where: {
-				email: req.body.email
+				email: req.body.login
 			} 
 		}).then(user => {
 			if(user){
-				res.status(400).send("Fail -> Email já em uso");
+				res.status(200).json({ resposta:  'email já em uso'});
+				
 				return;
 			}
 				
@@ -32,7 +33,8 @@ checkDuplicateUserNameOrEmail = (req, res, next) => {
 	});
 }
 
-checkRolesExisted = (req, res, next) => {	
+checkRolesExisted = (req, res, next) => {
+		
 	for(let i=0; i<req.body.roles.length; i++){
 		if(!ROLEs.includes(req.body.roles[i].toUpperCase())){
 			res.status(400).send("Fail -> Não existe = " + req.body.roles[i]);

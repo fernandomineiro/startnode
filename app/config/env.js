@@ -1,9 +1,8 @@
 const env = {
-  database: 'karamb48_node',
-  username: 'karamb48_node',
-  password: 'Node123',
-  host: '108.179.252.60',
-  spot_reconhecimento: 'karamb48_node',
+  database: 'fernandofolia',
+  username: 'fernandofolia',
+  password: 'fernandofolia1',
+  host: 'mysql743.umbler.com',
   dialect: 'mysql',
   pool: {
 	  max: 5,
