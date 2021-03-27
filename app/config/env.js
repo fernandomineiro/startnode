@@ -1,8 +1,8 @@
 const env = {
-  database: 'fernandofolia',
-  username: 'fernandofolia',
-  password: 'fernandofolia1',
-  host: 'mysql743.umbler.com',
+  database: 'lambafolia',
+  username: 'root',
+  password: 'tHuy2xNXG4xsdQdcF1zzvIIvRSr9wxi6',
+  host: 'dpg-c1frdsbjbvm8gugrnvd0',
   dialect: 'mysql',
   pool: {
 	  max: 5,
