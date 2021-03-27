@@ -5,11 +5,12 @@ app.use(cors());
 app.options('*', cors());
 app.set('view engine', 'pug');
 
-var bodyParser = require('body-parser');
 
 const nodemailer = require('nodemailer');
-
+var bodyParser = require('body-parser');
 app.use(bodyParser.json())
+app.use(bodyParser.text());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
 
@@ -24,7 +25,7 @@ var transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
 	  user: 'fernandofitilann@hotmail.com',
-	  pass: '!Lambari1'
+	  pass: ''
 	}
   });
   
@@ -37,7 +38,7 @@ var transporter = nodemailer.createTransport({
 //require('./app/route/project.route.js')(app);
  
 // Create a Server
-var server = app.listen(3005, function () {
+var server = app.listen(3000, function () {
  
   var host = server.address().address
   var port = server.address().port
@@ -48,19 +49,3 @@ var server = app.listen(3005, function () {
 
 
 
-function initial(){
-	Role.create({
-		id: 1,
-		name: "USER"
-	});
-	
-	Role.create({
-		id: 2,
-		name: "ADMIN"
-	});
-	
-	Role.create({
-		id: 3,
-		name: "PM"
-	});
-}
