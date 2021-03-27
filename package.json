@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-jwt-auth",
+  "name": "node",
   "version": "1.0.0",
-  "description": "Nodejs-JWT-Authentication-with-MySQL-Sequelize-ORM",
+  "description": "Nodejs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,11 +17,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "cli": "^1.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "ibm-watson": "^5.7.1",
     "jsonwebtoken": "^8.5.1",
     "local-storage": "^2.0.0",
     "localstorage-ponyfill": "^1.0.2",
@@ -29,8 +32,9 @@
     "mysql2": "^1.7.0",
     "node-localstorage": "^2.1.6",
     "node-storage": "0.0.9",
-    "nodemailer": "^6.4.11",
+    "nodemailer": "^6.5.0",
     "pug": "^3.0.0",
+    "request": "^2.88.2",
     "sequelize": "^5.22.3",
     "sequelize-cli": "^6.2.0"
   }
