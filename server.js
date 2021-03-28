@@ -30,10 +30,10 @@ var transporter = nodemailer.createTransport({
   });
   
 // force: true will drop the table if it already exists
-// db.sequelize.sync({force: true}).then(() => {
-//   console.log('Caso precisar socrinozação... { force: true }');
-//   initial();
-// });
+//db.sequelize.sync({force: true}).then(() => {
+ // console.log('Caso precisar socrinozação... { force: true }');
+ // initial();
+//});
  
 //require('./app/route/project.route.js')(app);
  
@@ -45,6 +45,7 @@ var server = app.listen(3000, function () {
  
   console.log("App listening at http://%s:%s", host, port)
 })
+
 
 
 

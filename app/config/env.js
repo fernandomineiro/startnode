@@ -3,7 +3,6 @@ const env = {
   username: 'fernandofolia',
   password: 'fernandofolia1',
   host: 'mysql743.umbler.com',
-  port: '41890',
   dialect: 'mysql',
   pool: {
 	  max: 5,

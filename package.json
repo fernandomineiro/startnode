@@ -33,7 +33,6 @@
     "node-localstorage": "^2.1.6",
     "node-storage": "0.0.9",
     "nodemailer": "^6.5.0",
-    "pg": "^8.5.1",
     "pug": "^3.0.0",
     "request": "^2.88.2",
     "sequelize": "^5.22.3",
