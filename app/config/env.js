@@ -2,7 +2,7 @@ const env = {
   database: 'mysql',
   username: 'mysql',
   password: 'root',
-  host: 'mysql://fixx:3306',
+  host: 'mysql://mysql:3306',
   dialect: 'mysql',
   pool: {
 	  max: 5,
