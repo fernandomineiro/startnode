@@ -23,10 +23,10 @@ var bcrypt = require('bcryptjs');
 		 const tipodeacesso = req.body.tipoAcesso;
 		 const email = req.body.login;
 		 const password = bcrypt.hashSync(req.body.senha, 8);
-		 const created = '2021-03-25 13:57:39'
+		 const created = 'zzzzzzzz';
 	
-		 const pracas = await db.sequelize.query(`INSERT INTO users (name, date, endereco, tell, cpf, tipodeacesso, email, password)
-		 VALUES ('${name}', '${date}', '${endereco}', '${tell}', '${cpf}', '${tipodeacesso}', '${email}', '${password}')`, { type: QueryTypes.INSERT });
+		 const pracas = await db.sequelize.query(`INSERT INTO users (name, date, endereco, tell, cpf, tipodeacesso, email, password, createdAt, updatedAt)
+		 VALUES ('${name}', '${date}', '${endereco}', '${tell}', '${cpf}', '${tipodeacesso}', '${email}', '${password}', '${created}', '${created}')`, { type: QueryTypes.INSERT });
 	   res.status(200).json({ resposta:  'ok'});
 
 	}
