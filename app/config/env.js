@@ -1,8 +1,9 @@
 const env = {
-  database: 'mysql',
-  username: 'mysql',
-  password: 'root',
-  host: 'fixx:3306',
+  database: 'fernandofolia',
+  username: 'fernandofolia',
+  password: 'fernandofolia1',
+  host: 'mysql743.umbler.com:41890',
+  port: '41890',
   dialect: 'mysql',
   pool: {
 	  max: 5,
