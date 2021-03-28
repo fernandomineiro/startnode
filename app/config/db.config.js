@@ -1,10 +1,11 @@
 const env = require('./env.js');
 
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize(env.database, env.username, env.password, {
+const sequelize = new Sequelize(env.database, env.username, env.password, env.port, {
   host: env.host,
   dialect: env.dialect,
   operatorsAliases: false,
+  port: env.port,
  
   pool: {
     max: env.max,
