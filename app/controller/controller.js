@@ -26,7 +26,7 @@ var bcrypt = require('bcryptjs');
 		 const created = 'zzzzzzzz';
 
 		 let teste = await db.sequelize.query(`SELECT * FROM users WHERE name = ${name}`, { type: QueryTypes.SELECT });
-
+		console.log(teste);
 		 if(teste.length != 0){
             teste = 1;
             res.status(200).json({ resposta:  'Nome já em uso'});
