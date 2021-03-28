@@ -25,13 +25,13 @@ var bcrypt = require('bcryptjs');
 		 const password = bcrypt.hashSync(req.body.senha, 8);
 		 const created = 'zzzzzzzz';
 
-		 let teste = await db.sequelize.query(`SELECT * FROM users WHERE name = ${name}`, { type: QueryTypes.SELECT });
+		 let teste = await db.sequelize.query(`SELECT name FROM users WHERE name = ${name}`, { type: QueryTypes.SELECT });
 		console.log(teste);
 		 if(teste.length != 0){
             teste = 1;
             res.status(200).json({ resposta:  'Nome já em uso'});
         }else{
-			let teste = await db.sequelize.query(`SELECT * FROM users WHERE email = ${email}`, { type: QueryTypes.SELECT });
+			let teste = await db.sequelize.query(`SELECT email FROM users WHERE email = ${email}`, { type: QueryTypes.SELECT });
 
 			if(teste.length != 0){
 				teste = 1;
