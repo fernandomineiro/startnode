@@ -30,10 +30,10 @@ var transporter = nodemailer.createTransport({
   });
   
 // force: true will drop the table if it already exists
-db.sequelize.sync({force: true}).then(() => {
-  console.log('Caso precisar socrinozação... { force: true }');
-  initial();
-});
+// db.sequelize.sync({force: true}).then(() => {
+//   console.log('Caso precisar socrinozação... { force: true }');
+//   initial();
+// });
  
 //require('./app/route/project.route.js')(app);
  
