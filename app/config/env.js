@@ -1,9 +1,9 @@
 const env = {
-  database: 'lambafolia',
-  username: 'root',
-  password: 'tHuy2xNXG4xsdQdcF1zzvIIvRSr9wxi6',
-  host: 'dpg-c1frdsbjbvm8gugrnvd0',
-  dialect: 'postgres',
+  database: 'mysql',
+  username: 'mysql',
+  password: 'root',
+  host: 'fixx:3306',
+  dialect: 'mysql',
   pool: {
 	  max: 5,
 	  min: 0,
