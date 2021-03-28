@@ -24,10 +24,26 @@ var bcrypt = require('bcryptjs');
 		 const email = req.body.login;
 		 const password = bcrypt.hashSync(req.body.senha, 8);
 		 const created = 'zzzzzzzz';
+
+		 let teste = await db.sequelize.query(`SELECT * FROM users WHERE name = ${name}`, { type: QueryTypes.SELECT });
+
+		 if(teste.length != 0){
+            teste = 1;
+            res.status(200).json({ resposta:  'Nome já em uso'});
+        }else{
+			let teste = await db.sequelize.query(`SELECT * FROM users WHERE email = ${email}`, { type: QueryTypes.SELECT });
+
+			if(teste.length != 0){
+				teste = 1;
+				res.status(200).json({ resposta:  'Email já em uso'});
+			}else{
+				const pracas = await db.sequelize.query(`INSERT INTO users (name, date, endereco, tell, cpf, tipodeacesso, email, password, createdat, updatedat)
+				VALUES ('${name}', '${date}', '${endereco}', '${tell}', '${cpf}', '${tipodeacesso}', '${email}', '${password}', '${created}', '${created}')`, { type: QueryTypes.INSERT });
+			  res.status(200).json({ resposta:  'ok'});
+			}
+
+        }
 	
-		 const pracas = await db.sequelize.query(`INSERT INTO users (name, date, endereco, tell, cpf, tipodeacesso, email, password, createdat, updatedat)
-		 VALUES ('${name}', '${date}', '${endereco}', '${tell}', '${cpf}', '${tipodeacesso}', '${email}', '${password}', '${created}', '${created}')`, { type: QueryTypes.INSERT });
-	   res.status(200).json({ resposta:  'ok'});
 
 	}
 	catch (err) {

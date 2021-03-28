@@ -15,7 +15,7 @@ module.exports = function(app) {
 
 	app.post('/ip/:id', video.ip);
  
-	app.post('/api/auth/registrar',[verifySignUp.checkDuplicateUserNameOrEmail], controller.signup);
+	app.post('/api/auth/registrar', controller.signup);
 	
 	app.post('/api/auth/logar', controller.signin);
 
